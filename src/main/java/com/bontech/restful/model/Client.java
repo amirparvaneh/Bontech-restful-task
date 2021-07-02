@@ -6,9 +6,9 @@ import javax.persistence.*;
 @Table(name = "Client")
 public class Client {
 
-public enum type {
-    SIMPLE,ADMIN
-}
+//public enum type {
+//    SIMPLE,ADMIN
+//}
     @Id()
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
@@ -23,7 +23,7 @@ public enum type {
     public Client() {
     }
 
-    public Client(int id, String name, int credit,) {
+    public Client(int id, String name, int credit,long password) {
         this.id = id;
         this.name = name;
         this.credit = credit;
